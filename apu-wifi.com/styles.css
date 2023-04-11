@@ -1,0 +1,97 @@
+.password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10% 30%;
+    width: 30%;
+    min-width: 500px;
+    max-width: 30%;
+    overflow: auto;
+    background-color: lightgray;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin: 2px 5px;
+}
+
+.form-title {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+#password-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+#password-input-container {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: left;
+    background-color: white;
+}
+
+#password-field {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 8px 2px;
+    border: none;
+    width: 90%;
+}
+
+#password-field:focus {
+    outline: none;
+}
+
+#password-response-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 2px 0px 0px 5px;
+}
+
+#response-message {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+#submit-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    width: 48%;
+    padding: 5px;
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: gray;
+    transition: all 0.5s;
+}
