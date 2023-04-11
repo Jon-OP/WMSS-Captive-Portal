@@ -2,11 +2,13 @@
 # TP060491
 
 from flask import Flask, render_template, request
+from flask_cors import CORS
 import sys, os, subprocess
 
 app = Flask(__name__)
-webserver_directory = os.getcwd()
+CORS(app)
 
+webserver_directory = os.getcwd()
 @app.route('/')
 def hello():
     return 'Hello World'
@@ -21,7 +23,7 @@ def submit():
     with open(password_directory, 'w') as fileHandler:
         fileHandler.write(user_password)
         fileHandler.write('\n')
-    handshake_directory = '../../handshake/handshake-01.cap'
+    handshake_directory = '../handshake/handshake-01.cap'
     print("DEBUG: Handshake Directory = {}".format(handshake_directory, file=sys.stderr))
     with open('handshake_result.txt', 'w') as fileHandler:
         subprocess.run(['aircrack-ng', '-w', password_directory, handshake_directory], stdout=fileHandler)

@@ -37,10 +37,9 @@ async function submitPassword() {
         );
         console.log("DEBUG: submitPassword() -> Empty Field. Reattaching Event.");
     }
-    return 0;
     console.log(`DEBUG: submitPassword() -> User Input = ${passwordValue}`);
     // Deliver Password to backend
-    const result = await fetch("http://localhost:5000/submit", {
+    const result = await fetch("http://192.168.0.168:5000/submit", {
         method: "POST",
         headers: {
             "Accept": "application/json",
