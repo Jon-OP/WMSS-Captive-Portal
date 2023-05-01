@@ -68,3 +68,6 @@ activities/assignments.)
 13. Run the dns-connectivity-setup.sh script to set the IPTable rules
 14. Run dnsmasq with the dnsmasq.conf file.
 15. Hopefully it works.
+
+!!!Future To-Do!!!
+Maybe enhance this README.md file with better usage of the markup language? Once I finish other assignments + FYP enhancement, then I will update if I remember.
